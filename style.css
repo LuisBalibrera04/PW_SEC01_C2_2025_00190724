@@ -1,0 +1,45 @@
+
+body{
+    line-height: 1.6;
+    margin-left: 400px;
+    margin-right: 200px;
+    text-align: justify;
+}
+
+
+.nombre_datos_libro{
+    left: 0;
+    position:fixed;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    width: 250px;
+}
+.datos_libro {
+    left: 0;
+    position: fixed;
+    top: 200px;
+    padding: 10px;
+    width: 250px;
+    text-align: left;
+}
+.nombre_descripcion_libro,
+.nombre_contenido_libro {
+    right: 100px;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    
+}
+
+.contenido_libro{
+    column-count: 2;
+}
+
+.contenido_libro.columnas {
+    display: grid;
+    gap: 20px;
+}
+
