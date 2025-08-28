@@ -52,11 +52,12 @@ body{
 .button{
     right: 0;
     position: fixed;
-    top: 80px;
+    top: 95px;
     padding: 15px 10px;
     width: 220px;
     text-align: left;
     cursor: pointer;
+    background-color: #61a2a3;
 }
 
 .button {
