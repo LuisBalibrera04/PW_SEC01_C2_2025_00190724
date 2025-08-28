@@ -2,16 +2,17 @@
 body{
     line-height: 1.6;
     margin-left: 400px;
-    margin-right: 200px;
+    margin-right: 300px;
     text-align: justify;
 }
 
 
 .nombre_datos_libro{
     left: 0;
+    right: 10;
     position:fixed;
     background-color: #f0f0f0;
-    padding: 10px;
+    padding: 2px;
     border: 1px solid #ccc;
     margin-bottom: 10px;
     width: 250px;
@@ -28,7 +29,7 @@ body{
 .nombre_contenido_libro {
     right: 100px;
     background-color: #f0f0f0;
-    padding: 10px;
+    padding: 2px;
     border: 1px solid #ccc;
     margin-bottom: 10px;
     
@@ -42,4 +43,35 @@ body{
     display: grid;
     gap: 20px;
 }
+
+
+.cambiar_columnas {
+    right: 10px;
+}
+
+.button{
+    right: 0;
+    position: fixed;
+    top: 80px;
+    padding: 15px 10px;
+    width: 220px;
+    text-align: left;
+    cursor: pointer;
+}
+
+.button {
+    display: flex;
+    flex-direction: column; 
+    gap: 15px;               
+}
+
+.imagen_libro {
+    left: 0;
+    position: fixed;
+    top: 450px;
+    padding: 10px;
+    width: 250px;
+    text-align: left;
+}
+
 

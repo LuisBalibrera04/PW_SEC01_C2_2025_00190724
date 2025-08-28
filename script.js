@@ -17,6 +17,29 @@ function cambiarColor() {
     const subtitulo = document.querySelector(".nombre_descripcion_libro h2");
     const texto = document.querySelector(".descripcion_libro p");
 
-    subtitulo.style.color = (subtitulo.style.color === "darkblue") ? "black" : "darkblue";
-    texto.style.color = (texto.style.color === "darkblue") ? "black" : "darkblue";
+    if (subtitulo.style.color === "darkblue") {
+        subtitulo.style.color = "black";
+        texto.style.fontFamily = "times new roman";
+    } else {
+        subtitulo.style.color = "darkblue";
+        texto.style.fontFamily = "'Courier New', monospace";
+    }
+}
+
+function anadirImagen() {
+    const url = prompt("Ingresa la URL de la imagen que deseas añadir:");
+
+    if (url) {
+        let img = document.querySelector(".imagen_libro");
+        if (img) {
+            img.src = url;
+        } else {
+            img = document.createElement("img");
+            img.src = url;
+            img.alt = "";
+            img.classList.add("imagen_libro");
+            const datosLibro = document.querySelector(".datos_libro");
+            datosLibro.insertAdjacentElement("afterend", img);
+        }
+    }
 }
